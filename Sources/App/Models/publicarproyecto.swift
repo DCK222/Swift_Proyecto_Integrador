@@ -8,7 +8,7 @@ final class PublicarProyecto: Model, Content {
     var id: Int?
     
     @Field(key: "nombre_proy")
-    var nombreProy: String?
+    var nombreProyecto: String?
     
     @Field(key: "localizacion")
     var localizacion: String?
@@ -20,13 +20,13 @@ final class PublicarProyecto: Model, Content {
     var disposicion: String?
     
     @Field(key: "num_inscritos")
-var numInscritos: Int?
+    var numeroInscritos: Int?
     
     @Field(key: "estudios")
     var estudios: String?
     
     @Field(key: "curso_recomendado")
-var cursoRecomendado: String?
+    var cursoRecomendado: String?
     
     @Field(key: "idiomas")
     var idiomas: String?
@@ -35,20 +35,20 @@ var cursoRecomendado: String?
     var certificaciones: String?
     
     @Field(key: "descripcion_proy")
-    var descripcionProy: String?
+    var descripcionProyecto: String?
     
     init() {}
     
-    init(nombreProy: String, localizacion: String, nombreCreador: String, disposicion: String, numInscritos: Int, estudios: String, cursoRecomendado: String, idiomas: String, certificaciones: String, descripcionProy: String) {
-    self.nombreProy = nombreProy
-    self.localizacion = localizacion
-    self.nombreCreador = nombreCreador
-    self.disposicion = disposicion
-    self.numInscritos = numInscritos
-    self.estudios = estudios
-    self.cursoRecomendado = cursoRecomendado
-    self.idiomas = idiomas
-    self.certificaciones = certificaciones
-    self.descripcionProy = descripcionProy
-}
+    init(nombreProyecto: String, localizacion: String, nombreCreador: String, disposicion: String, numeroInscritos: Int, estudios: String, cursoRecomendado: String, idiomas: String, certificaciones: String, descripcionProyecto: String) {
+        self.nombreProyecto = nombreProyecto
+        self.localizacion = localizacion
+        self.nombreCreador = nombreCreador
+        self.disposicion = disposicion
+        self.numeroInscritos = numeroInscritos
+        self.estudios = estudios
+        self.cursoRecomendado = cursoRecomendado
+        self.idiomas = idiomas
+        self.certificaciones = certificaciones
+        self.descripcionProyecto = descripcionProyecto
+    }
 }
